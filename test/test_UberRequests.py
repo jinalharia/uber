@@ -1,8 +1,6 @@
 from utils.uber import UberRequests
+import config.config as config
 import pprint
 
-home = "22 Colebrook Close, London, SW15 3HZ"
-harrow = "13 Cambridge Road, Harrow, HA2 7LA"
-
-req = UberRequests(home, harrow)
+req = UberRequests(config.hospital, config.digby)
 pprint.pprint(req.output_formatted)
