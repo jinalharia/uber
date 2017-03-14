@@ -18,7 +18,7 @@ class UberRequests():
         estimate_df = pd.DataFrame(estimate)
         estimate_df["duration_mins"] = estimate_df["duration"] / 60.0
 
-        pickup_response = client.get_pickup_time_estimates(start_address.lat, start_address.lng)
+        pickup_response = client.get_pickup_time_estimates(self.start_address.lat, self.start_address.lng)
         times = pickup_response.json.get("times")
         times_df = pd.DataFrame(times)
         times_df["time_to_pick_up_mins"] = times_df["estimate"] / 60.0
