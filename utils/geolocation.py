@@ -1,9 +1,6 @@
 import json, urllib, urllib.parse
 from urllib.request import urlopen
 
-address = "22 Colebrook Close, London, SW15 3HZ"
-end_address = "15 Digby Mansions, London, W6 9DE"
-
 class Address():
 
     def __init__(self, address):

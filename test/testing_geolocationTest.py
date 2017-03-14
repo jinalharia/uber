@@ -4,12 +4,11 @@ import unittest
 
 class TestAddress(unittest.TestCase):
     def test_geolocation(self):
-        start_address = "22 Colebrook Close, London, SW15 3HZ"
-        end_address = "15 Digby Mansions, London, W6 9DE"
+        start_address = "15 Digby Mansions, London, W6 9DE"
 
-        colebrook_address = Address(start_address)
-        # print(colebrook_address.lat)
-        # print(colebrook_address.lng)
+        address = Address(start_address)
+        print(address.lat)
+        print(address.lng)
 
-        assert colebrook_address.lat == 51.4505949
-        assert colebrook_address.lng == -0.2197215
+        assert address.lat == 51.4898825
+        assert address.lng == -0.2292357
