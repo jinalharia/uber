@@ -3,4 +3,4 @@ import config.config as config
 import pprint
 
 req = UberRequests(config.hospital, config.digby)
-pprint.pprint(req.output_formatted)
+pprint.pprint(req.results)

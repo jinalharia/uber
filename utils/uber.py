@@ -27,5 +27,5 @@ class UberRequests():
         output = pd.merge(estimate_df, times_df, how="outer", on="display_name")
         cols = ["display_name", "time_to_pick_up_mins", "distance", "duration_mins", "currency_code", "estimate",
                 "surge_multiplier"]
-        self.output_formatted = output[cols]
-        # pprint.pprint(output_formatted)
+        self.results = output[cols]
+        # pprint.pprint(results)
